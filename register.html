@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> register </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: blue;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="header-top">
+            <div id="logo">
+                <img src="images/profile.jpg" alt="my-profile">
+            </div>
+            <nav>
+                <div class="navigation-bar">
+                    <ul>
+                        <li><a href="index.html">about</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="register.html" class="active">registration</a></li>
+                        <li><a href="login.html">login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="header-image"></div>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+        <form action="">
+            <div class="container">
+                <h1 style="text-align: center;">This is our registration page</h1>
+                <p style="text-align: center;">Fill in this form to create an account with us, today!</p>
+                <hr>
+    
+                <label for="f-name">First Name</label>
+                <input type="text" id="f-name" name="f-name" placeholder="Enter first name..." required>
+    
+                <label for="s-name">Last Name</label>
+                <input type="text" id="l-name" name="l-name" placeholder="Enter last name..." required>
+    
+                <label for="phone-number">Phone Number</label>
+                <input type="text" id="p-number" name="p-number" placeholder="Enter phone number" required>
+    
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+                <br>
+    
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" placeholder="Enter country name..." required>
+    
+                <label for="s-province">State or Province</label>
+                <input type="text" id="s-province" name="s-province" placeholder="Enter state or province..." required>
+    
+                <label for="e-mail">Email</label>
+                <input type="text" id="mail" name="e-mail" placeholder="Enter email address..." required>
+    
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            
+                <label for="psw-confirm"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Confirm Password" name="psw-confirm" id="psw-confirm" required>
+    
+                <hr>
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            
+                <button type="submit" class="registerbtn">Register</button>
+    
+            </div>
+        </form>
+    </main>
+
+    
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="company-details">
+            <div class="row">
+                <div id="col1">
+                    P. O. Box 195-40606 <br>
+                    Ugunja, Siaya Kenya.
+                </div> 
+                <br>
+                <br>
+                <div class="col2">
+                    Telephone <br>
+                    +254 755 846298
+                </div>
+                <br>
+                <br>
+                <div class="col3">
+                    Email <br>
+                    bygeoffreyouma@gmail.com
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>2022 © All rights reserved <span style="color: whitesmoke;">WebTechKe</span>.</p>
+        </div>
+    </footer>
+</body>
+</html>

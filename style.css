@@ -1,0 +1,123 @@
+html, body{
+    height: 100%;
+}
+
+/*************************/
+/*    Styling  Header    */
+/*************************/
+
+header{
+    overflow: hidden;
+}
+ 
+#header-top{
+         
+    text-align: center;
+    height: 60px;
+}
+ 
+/****************/   
+/* Styling Logo */
+/****************/
+
+#logo{
+    float: left;
+    padding: none;
+    margin: none;
+    height: 200px;
+    width: 200px;
+}
+ 
+#logo img{
+    width: 60%;
+    float: left;
+    padding: 10px 0px;
+    border-radius: 13em;
+}   
+ 
+/***************************/
+/* Styling Navigation Menu */
+/***************************/
+
+.navigation-bar{
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin: none;
+}
+     
+.navigation-bar ul{
+    text-align: center;
+    float: right;
+    margin: none;
+    background: blue;
+}
+     
+.navigation-bar li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+     
+.navigation-bar li a, .navigation-bar li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+     
+.navigation-bar li a{
+         
+    color: white;
+}
+     
+.navigation-bar li:hover a, .navigation-bar li span{
+    background: #FFF;
+    color: blue;
+    border-left: 1px solid blue;
+    text-decoration: none;
+}
+/********************
+Main
+*******************/
+.column {
+    float: left;
+    width: 33.33%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*******************
+Footer
+*******************/
+.company-details{
+    overflow: hidden;
+    padding: 1em 0em;
+    background: #E3F0F7;
+    text-align: center;
+    margin-top: 5em;
+}
+ 
+.copyright{
+    overflow: hidden;
+    padding: 1em 0em;
+    border-top: 20px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    background: blue;
+}
+     
+.copyright p{
+    letter-spacing: 1px;
+    font-size: 0.90em;
+    color: rgba(255, 255, 255, 0.6);
+}
+     
+.copyright a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 19px;
+}
